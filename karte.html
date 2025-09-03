@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cocktailkarte – Tipzy Tommy’s Cocktail Taxi</title>
+  <meta name="description" content="Komplette Cocktail- und Mocktail-Karte mit Zutaten.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f0f12;--card:#16161b;--text:#eaeaea;--muted:#a9abb3;--accent:#ffd166;--border:#26262f}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b0b0e,#121218);color:var(--text)}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:var(--text)}
+    h1{font-size:34px;margin:12px 0 8px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;margin-top:16px}
+    .price{background:#22222b;border:1px solid #2e2e38;border-radius:999px;padding:4px 10px;font-size:12px;color:var(--muted);white-space:nowrap}
+    .section{margin-top:18px}
+    details{border-top:1px solid var(--border);padding:12px 0}
+    details:first-of-type{border-top:none}
+    summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600}
+    summary::-webkit-details-marker{display:none}
+    .muted{color:var(--muted);font-size:14px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid #333;background:#1e1e25;color:#eaeaea;text-decoration:none;font-weight:700}
+    .btn.primary{background:var(--accent);color:#111;border-color:#c9a94f}
+    footer{color:#8d8f98;font-size:14px;padding:36px 0 24px}
+    a{color:#ffd166}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="index.html">
+        <img src="logo.jpeg" alt="Tipzy Tommy’s Logo" style="height:40px; border-radius:8px; display:block;">
+        <div>
+          <div style="font-weight:800;">Tipzy Tommy’s</div>
+          <div style="font-size:12px;color:var(--muted)">Cocktail Taxi</div>
+        </div>
+      </a>
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="karte.html">Cocktailkarte</a>
+      </nav>
+    </header>
+
+    <h1>Cocktailkarte</h1>
+    <p class="muted">Jumbo-Gläser 0,4 l · Preise inkl. MwSt. · Allergene/ Inhaltsstoffe auf Anfrage.</p>
+
+    <div class="card section">
+      <h2 style="margin:0 0 8px;">Cocktails (10,90 €)</h2>
+
+      <details>
+        <summary><span>Tipzy Tommy’s Acid Heat</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Hausdrink – Basis & Schärfe bitte angeben (z. B. Ingwer/Chili) · Zitrus · Eis.</div>
+      </details>
+
+      <details>
+        <summary><span>Bacardi Mojito</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Rum · Limette · Minze · Rohrzucker · Soda · Eis.</div>
+      </details>
+
+      <details>
+        <summary><span>Bacardi Razz Mojito</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Himbeer-Rum · Limette · Minze · Rohrzucker · Soda · Eis.</div>
+      </details>
+
+      <details>
+        <summary><span>Bacardi Sail</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Rum · (genaue Rezeptur bitte angeben).</div>
+      </details>
+
+      <details>
+        <summary><span>Tequila Sunrise</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Tequila · Orangensaft · Grenadine · Eis.</div>
+      </details>
+
+      <details>
+        <summary><span>Blue Lagoon</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Vodka · Blue Curaçao · Zitronenlimonade · Eis.</div>
+      </details>
+
+      <details>
+        <summary><span>Caipirinha</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Cachaça · Limette · Zucker · Crushed Ice.</div>
+      </details>
+
+      <details>
+        <summary><span>Caipiroska</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Vodka · Limette · Zucker · Crushed Ice.</div>
+      </details>
+
+      <details>
+        <summary><span>Planter’s Punch</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Rum · Zitrus · Ananas/Orange · Grenadine · (optional) Bitters · Eis.</div>
+      </details>
+
+      <details>
+        <summary><span>Cuba Libre</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Rum · Cola · Limette · Eis.</div>
+      </details>
+
+      <details>
+        <summary><span>Coco Loco</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Rum/Vodka · Kokos · Ananas · Zitrus · Eis. (Bitte Rezept angeben.)</div>
+      </details>
+
+      <details>
+        <summary><span>Marina’s Kiss</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Hausrezept – Zutaten bitte angeben.</div>
+      </details>
+
+      <details>
+        <summary><span>Sex On The Beach</span><span class="price">10,90 €</span></summary>
+        <div class="muted">Vodka · Pfirsichlikör · Orange · Cranberry · Eis.</div>
+      </details>
+    </div>
+
+    <div class="card section">
+      <h2 style="margin:0 0 8px;">Mocktails (7,90 €)</h2>
+
+      <details>
+        <summary><span>Virgin Mojito</span><span class="price">7,90 €</span></summary>
+        <div class="muted">Limette · Minze · Zucker · Soda · Eis.</div>
+      </details>
+
+      <details>
+        <summary><span>Ipanema</span><span class="price">7,90 €</span></summary>
+        <div class="muted">Ginger Ale · Limette · Rohrzucker · (optional) Maracuja · Eis.</div>
+      </details>
+
+      <details>
+        <summary><span>Safer Sex On The Beach</span><span class="price">7,90 €</span></summary>
+        <div class="muted">Orange · Cranberry · Pfirsichnektar · Zitrus · Eis.</div>
+      </details>
+    </div>
+
+    <div class="cta">
+      <a class="btn primary" href="https://wa.me/491736608508" target="_blank" rel="noopener">Per WhatsApp bestellen</a>
+      <a class="btn" href="tel:+491736608508">Anrufen: 0173&nbsp;660&nbsp;8508</a>
+      <a class="btn" href="index.html">Zur Startseite</a>
+    </div>
+
+    <footer>
+      <p class="muted">© <span id="y"></span> Tipzy Tommy’s · Nettetal</p>
+    </footer>
+  </div>
+  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>
