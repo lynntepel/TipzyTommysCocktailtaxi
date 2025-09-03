@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>tipzy tommys cocktail taxi – Cocktails per Lieferung</title>
+  <meta name="description" content="Frische Cocktails am Wochenende direkt zu dir nach Hause. Jetzt bestellen über WhatsApp oder Telefon." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0f0f12; --card:#16161b; --text:#eaeaea; --muted:#a9abb3; --accent:#ffd166; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b0b0e,#121218);color:var(--text)}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+    .logo{width:42px;height:42px;border-radius:12px;background:var(--accent);display:inline-grid;place-items:center;font-weight:800;color:#111}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    nav a:hover{color:var(--text)}
+    .hero{display:grid;gap:18px;padding:64px 0}
+    .badge{display:inline-block;background:#26262f;color:#ffd166;border:1px solid #3a3a44;border-radius:999px;padding:6px 12px;font-size:14px}
+    h1{font-size:44px;line-height:1.1;margin:6px 0 4px}
+    .sub{color:var(--muted);max-width:700px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;border:1px solid #333;background:#1e1e25;color:var(--text);text-decoration:none;font-weight:600}
+    .btn.primary{background:var(--accent);color:#111;border-color:#c9a94f}
+    .grid{display:grid;gap:18px}
+    @media(min-width:900px){ .grid{grid-template-columns:1.1fr .9fr} }
+    .card{background:var(--card);border:1px solid #26262f;border-radius:16px;padding:18px}
+    .card h3{margin:0 0 8px}
+    .list{margin:8px 0 0;padding:0;list-style:none}
+    .list li{padding:8px 0;border-top:1px solid #26262f;display:flex;justify-content:space-between;gap:12px}
+    .pill{background:#22222b;border:1px solid #2e2e38;border-radius:999px;padding:4px 10px;font-size:12px;color:var(--muted)}
+    footer{color:#8d8f98;font-size:14px;padding:48px 0 24px}
+    a{color:#ffd166}
+    .note{font-size:13px;color:#9da0a9}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#top">
+        <div class="logo">TT</div>
+        <div>
+          <div style="font-weight:800;">tipzy tommys</div>
+          <div style="font-size:12px;color:var(--muted)">cocktail taxi</div>
+        </div>
+      </a>
+      <nav>
+        <a href="#menu">Menü</a>
+        <a href="#bestellen">Bestellen</a>
+        <a href="#infos">Infos</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="badge">Wochenends liefern wir Cocktails zu dir 🍹</span>
+      <h1>Frische Cocktails – <br/>direkt zu dir nach Hause.</h1>
+      <p class="sub">„tipzy tommys cocktail taxi“ mixt und liefert am <strong>Freitag & Samstag</strong> in deiner Stadt. Jetzt vorbestellen & genießen.</p>
+      <div class="cta" id="bestellen">
+        <!-- WhatsApp: ersetze 49XXXXXXXXXX durch echte Nummer im internationalen Format -->
+        <a class="btn primary" href="https://wa.me/49XXXXXXXXXX?text=Hi%20tipzy%20tommys!%20Ich%20m%C3%B6chte%20Cocktails%20bestellen." target="_blank" rel="noopener">Über WhatsApp bestellen</a>
+        <a class="btn" href="tel:+49XXXXXXXXXX">Anrufen: +49&nbsp;XX&nbsp;XXXX&nbsp;XXXX</a>
+      </div>
+      <p class="note">Lieferzeiten: Fr & Sa 18:00–01:00 · Liefergebiet: <em>bitte hier anpassen</em></p>
+    </section>
+
+    <section class="grid" id="menu">
+      <div class="card">
+        <h3>Beliebte Cocktails</h3>
+        <ul class="list">
+          <li><span>Mojito</span><span class="pill">8,50&nbsp;€</span></li>
+          <li><span>Sex on the Beach</span><span class="pill">8,90&nbsp;€</span></li>
+          <li><span>Pornstar Martini</span><span class="pill">9,50&nbsp;€</span></li>
+          <li><span>Margarita</span><span class="pill">9,50&nbsp;€</span></li>
+          <li><span>Virgin Mule (0%)</span><span class="pill">6,90&nbsp;€</span></li>
+        </ul>
+        <p class="note">Allergene & Inhaltsstoffe auf Anfrage. Mindestbestellwert & Liefergebühr bitte eintragen.</p>
+      </div>
+      <div class="card">
+        <h3>So läuft’s ab</h3>
+        <ol class="list" style="list-style:decimal;padding-left:18px;">
+          <li style="border:none;padding:0 0 8px;">Du bestellst per WhatsApp/Telefon.</li>
+          <li style="border:none;padding:0 0 8px;">Wir mixen frisch & liefern schnell.</li>
+          <li style="border:none;padding:0;">Bezahle bar oder digital (bitte Zahlungsmethoden anpassen).</li>
+        </ol>
+        <div style="margin-top:10px;">
+          <span class="pill">Ab 18 · Ausweiskontrolle</span>
+          <span class="pill">Frisch gemixt</span>
+          <span class="pill">Lokaler Service</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" id="infos" style="margin-top:18px;">
+      <div class="card">
+        <h3>Liefergebiet & Zeiten</h3>
+        <p>Liefergebiet: <em>deine Stadt/PLZ</em><br/>Zeiten: Fr & Sa 18:00–01:00 (Anpassen)</p>
+        <p class="note">Vorbestellungen willkommen. Größere Mengen für Partys bitte frühzeitig anfragen.</p>
+      </div>
+      <div class="card">
+        <h3>Kontakt</h3>
+        <p><strong>tipzy tommys cocktail taxi</strong><br/>
+           E-Mail: <a href="mailto:bestellung@tipzy-tommys.de">bestellung@tipzy-tommys.de</a><br/>
+           Tel: <a href="tel:+49XXXXXXXXXX">+49&nbsp;XX&nbsp;XXXX&nbsp;XXXX</a>
+        </p>
+        <p class="note">Impressum & Datenschutz siehe unten.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>Impressum (Pflicht in Deutschland):</strong><br/>
+        Max Mustermann · Musterstraße 1 · 12345 Musterstadt · USt-ID/Steuernummer (falls vorhanden) · E-Mail · Telefon
+      </p>
+      <p><strong>Datenschutz:</strong> Diese Website setzt keine Cookies, speichert keine personenbezogenen Daten. Bestellungen laufen über WhatsApp/Telefon beim Anbieter.
+      </p>
+      <p>© <span id="y"></span> tipzy tommys</p>
+    </footer>
+  </div>
+  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>
