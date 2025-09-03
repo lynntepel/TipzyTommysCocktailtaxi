@@ -8,15 +8,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0f0f12; --card:#16161b; --text:#eaeaea; --muted:#a9abb3; --accent:#ffd166; --border:#26262f;
-    }
+    :root{ --bg:#0f0f12; --card:#16161b; --text:#eaeaea; --muted:#a9abb3; --accent:#ffd166; --border:#26262f; }
     *{box-sizing:border-box}
     body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b0b0e,#121218);color:var(--text)}
     .wrap{max-width:1100px;margin:0 auto;padding:24px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
     .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
-    .logo{width:46px;height:46px;border-radius:12px;background:var(--accent);display:inline-grid;place-items:center;font-weight:800;color:#111}
     nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
     nav a:hover{color:var(--text)}
     .hero{display:grid;gap:18px;padding:54px 0}
@@ -29,35 +26,28 @@
     .grid{display:grid;gap:18px}
     @media(min-width:900px){ .grid{grid-template-columns:1.1fr .9fr} }
     .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
-    .card h3{margin:0 0 8px}
     .list{margin:8px 0 0;padding:0;list-style:none}
     .list li{padding:10px 0;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px}
     .pill{background:#22222b;border:1px solid #2e2e38;border-radius:999px;padding:4px 10px;font-size:12px;color:var(--muted);white-space:nowrap}
     .note{font-size:13px;color:#9da0a9}
-    .menu-cols{display:grid;gap:16px}
-    @media(min-width:800px){ .menu-cols{grid-template-columns:1fr 1fr} }
-    .section-title{margin-top:8px;margin-bottom:6px}
+    .divider{height:1px;background:var(--border);margin:20px 0}
     footer{color:#8d8f98;font-size:14px;padding:48px 0 24px}
     a{color:#ffd166}
-    .divider{height:1px;background:var(--border);margin:20px 0}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <a class="brand" href="#top">
-       
-       <img src="logo.jpeg" alt="Tipzy Tommy’s Logo" style="height:48px; border-radius:8px;">
-
+      <a class="brand" href="index.html">
+        <img src="logo.jpeg" alt="Tipzy Tommy’s Logo" style="height:48px; border-radius:8px; display:block;">
         <div>
           <div style="font-weight:800;">Tipzy Tommy’s</div>
           <div style="font-size:12px;color:var(--muted)">Cocktail Taxi</div>
         </div>
       </a>
       <nav>
+        <a href="karte.html">Cocktailkarte</a>
         <a href="#bestellen">Bestellen</a>
-        <a href="#bestseller">Beliebt</a>
-        <a href="#karte">Cocktailkarte</a>
         <a href="#infos">Infos</a>
       </nav>
     </header>
@@ -68,8 +58,7 @@
       <h1>Startschuss für Tipzy Tommy’s Cocktail Taxi</h1>
       <p class="sub">
         Am Freitag, den <strong>13.09.</strong> und Samstag, den <strong>14.09.</strong> liefern wir von
-        <strong>19:00 Uhr bis 03:00 Uhr</strong> frisch gemixte <strong>Jumbo-Cocktails (0,4 l)</strong> direkt vor
-        eure Haustür – eiskalt & lecker! 🧊✨
+        <strong>19:00 Uhr bis 03:00 Uhr</strong> frisch gemixte <strong>Jumbo-Cocktails (0,4 l)</strong> direkt vor eure Haustür – eiskalt & lecker! 🧊✨
       </p>
       <p>
         👉 Vorbestellungen sind ab sofort möglich – einfach per WhatsApp an <strong>0173&nbsp;660&nbsp;8508</strong><br/>
@@ -81,10 +70,11 @@
       <div class="cta">
         <a class="btn primary" href="https://wa.me/491736608508?text=Hi%20Tipzy%20Tommy%E2%80%99s!%20Ich%20m%C3%B6chte%20Cocktails%20bestellen.%20Mein%20Name%3A%20___%20Adresse%3A%20___%20Uhrzeit%3A%20___" target="_blank" rel="noopener">WhatsApp bestellen</a>
         <a class="btn" href="tel:+491736608508">Anrufen: 0173&nbsp;660&nbsp;8508</a>
+        <a class="btn" href="karte.html" aria-label="Zur kompletten Cocktailkarte">👉 Zur kompletten Cocktailkarte</a>
       </div>
     </section>
 
-    <!-- BESTSELLER -->
+    <!-- BESTSELLER (kurz) -->
     <section class="grid" id="bestseller">
       <div class="card">
         <h3>Beliebte Cocktails</h3>
@@ -93,15 +83,15 @@
           <li><span>Bacardi Mojito (0,4 l)</span><span class="pill">10,90&nbsp;€</span></li>
           <li><span>Sex On The Beach (0,4 l)</span><span class="pill">10,90&nbsp;€</span></li>
         </ul>
-        <p class="note">Alle Preise in Euro. Weitere Drinks in der kompletten Karte unten.</p>
-        <a class="btn" href="#karte" aria-label="Zur kompletten Cocktailkarte">👉 Zur kompletten Cocktailkarte</a>
+        <p class="note">Die komplette Auswahl findest du auf der Karte.</p>
+        <a class="btn" href="karte.html">Zur Cocktailkarte</a>
       </div>
       <div class="card">
         <h3>So läuft’s ab</h3>
         <ol class="list" style="list-style:decimal;padding-left:18px;">
-          <li style="border:none;padding:0 0 10px;">Bestellung per WhatsApp.</li>
+          <li style="border:none;padding:0 0 10px;">Bestellung per WhatsApp oder Anruf.</li>
           <li style="border:none;padding:0 0 10px;">Wir mixen frisch & liefern schnell.</li>
-          <li style="border:none;padding:0;">Bezahlung Bar, Karte oder PayPal bei Lieferung.</li>
+          <li style="border:none;padding:0;">Bezahlung bar, Karte oder PayPal bei Lieferung.</li>
         </ol>
         <div style="margin-top:10px;">
           <span class="pill">Ab 18 · Ausweiskontrolle</span>
@@ -111,41 +101,7 @@
       </div>
     </section>
 
-    <!-- KOMPLETTE KARTE -->
-    <section id="karte" style="margin-top:18px;">
-      <h2 class="section-title">Cocktailkarte</h2>
-      <div class="card">
-        <div class="menu-cols">
-          <div>
-            <h3 style="margin-top:0;">Cocktails</h3>
-            <ul class="list">
-              <li><span>Tipzy Tommy’s Acid Heat 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Bacardi Mojito 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Bacardi Razz Mojito 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Bacardi Sail 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Tequila Sunrise 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Blue Lagoon 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Caipirinha 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Caipiroska 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Planter’s Punch 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Cuba Libre 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Coco Loco 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Marina’s Kiss 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-              <li><span>Sex On The Beach 0,4 l</span><span class="pill">10,90&nbsp;€</span></li>
-            </ul>
-          </div>
-          <div>
-            <h3 style="margin-top:0;">Mocktails</h3>
-            <ul class="list">
-              <li><span>Virgin Mojito 0,4 l</span><span class="pill">7,90&nbsp;€</span></li>
-              <li><span>Ipanema 0,4 l</span><span class="pill">7,90&nbsp;€</span></li>
-              <li><span>Safer Sex On The Beach 0,4 l</span><span class="pill">7,90&nbsp;€</span></li>
-            </ul>
-          </div>
-        </div>
-        <p class="note">Allergene/ Inhaltsstoffe auf Anfrage. Preise inkl. MwSt.</p>
-      </div>
-    </section>
+    <div class="divider"></div>
 
     <!-- INFOS -->
     <section class="grid" id="infos" style="margin-top:18px;">
@@ -158,20 +114,18 @@
         <h3>Kontakt</h3>
         <p>
           <strong>Tipzy Tommy’s Cocktail Taxi</strong><br/>
-          WhatsApp / Tel.: <a href="tel:+491736608508">0173&nbsp;660&nbsp;8508</a><br/>
-          E-Mail: <a href="mailto:bestellung@tipzy-tommys.de">bestellung@tipzy-tommys.de</a> (optional)
+          WhatsApp / Tel.: <a href="tel:+491736608508">0173&nbsp;660&nbsp;8508</a>
         </p>
         <div class="cta">
           <a class="btn primary" href="https://wa.me/491736608508" target="_blank" rel="noopener">Jetzt per WhatsApp vorbestellen</a>
+          <a class="btn" href="karte.html">Cocktailkarte ansehen</a>
         </div>
       </div>
     </section>
 
-    <div class="divider"></div>
-
     <footer>
       <p><strong>Impressum:</strong><br/>
-        Tommy-Joe Tepel · Gier 32A · 41334 Nettetal · 0173 6608508 
+        Tommy-Joe Tepel · Gier 32A · 41334 Nettetal · 0173 6608508
       </p>
       <p><strong>Datenschutz:</strong> Diese Website setzt keine Cookies und speichert keine personenbezogenen Daten.
         Bestellungen erfolgen über WhatsApp direkt beim Anbieter.
