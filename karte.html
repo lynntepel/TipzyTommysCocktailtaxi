@@ -144,6 +144,35 @@
       </details>
     </div>
 
+
+    <div class="card section">
+  <h2>Bestellformular</h2>
+  <p>Klick deine Drinks an und schicke die Bestellung per WhatsApp:</p>
+  
+  <form id="orderForm">
+    <label><input type="checkbox" value="Tipzy Tommy’s Acid Heat"> Tipzy Tommy’s Acid Heat</label><br>
+    <label><input type="checkbox" value="Bacardi Mojito"> Bacardi Mojito</label><br>
+    <label><input type="checkbox" value="Sex on the Beach"> Sex on the Beach</label><br>
+    <!-- hier kannst du ALLE Cocktails aus der Karte ergänzen -->
+    
+    <br>
+    <button type="button" class="btn primary" onclick="sendOrder()">Bestellung per WhatsApp senden</button>
+  </form>
+</div>
+
+<script>
+function sendOrder(){
+  let order = "Meine Bestellung bei Tipzy Tommy’s:\n";
+  document.querySelectorAll('#orderForm input[type=checkbox]:checked').forEach(cb => {
+    order += "- " + cb.value + "\n";
+  });
+  order += "\nWunschuhrzeit: ___\nAdresse: ___";
+  let url = "https://wa.me/491736608508?text=" + encodeURIComponent(order);
+  window.open(url, '_blank');
+}
+</script>
+
+
     <div class="cta">
       <a class="btn primary" href="https://wa.me/491736608508?text=Hi%20Tipzy%20Tommy%E2%80%99s!%20Ich%20möchte%20Cocktails%20bestellen.%20Meine%20Wunschuhrzeit%3A%20___%0AMeine%20Adresse%3A%20___%0AMeine%20Bestellung%3A%20___%0AIch%20zahle%20per%3A%20Bar%20/%20Karte%20/%20PayPal
 " target="_blank" rel="noopener">Per WhatsApp bestellen</a>
